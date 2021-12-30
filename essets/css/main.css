@@ -129,12 +129,11 @@
 /* ==Header Notification== */
 .notify::before {
   content: "";
-  display: block;
+  border: 20px solid;
+  border-color: transparent transparent var(--white-color) transparent;
   position: absolute;
-  width: 100%;
-  height: 24px;
-  left: 0;
-  top: -17px;
+  right: 23px;
+  top: -31px;
 }
 
 .notify {
@@ -172,6 +171,7 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 40px;
+  margin-left: 11px;
 }
 
 .notify__list {
