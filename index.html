@@ -49,7 +49,7 @@
                     <ul class="navbar__list">
                         <li class="navbar__item navbar__item--has-notify">
                             <a href="#" class="navbar__item-link">
-                                <i class="navbar__icon fas fa-bell"></i>
+                                <i class="navbar__icon far fa-bell"></i>
                                 Thông báo
                             </a>
                             <!-- Header notification -->
@@ -103,14 +103,32 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="navbar__item navbar__item--blod navbar__item--separate">Đăng ký</li>
-                        <li class="navbar__item navbar__item--blod">Đăng nhập</li>
+                        <!-- <li class="navbar__item navbar__item--blod navbar__item--separate">Đăng ký</li>
+                        <li class="navbar__item navbar__item--blod">Đăng nhập</li> -->
+                        <li class="navbar__item navbar-user">
+                            <img src="./essets/img/avatar.jpg" alt="" class="navbar__item-avatar">
+                            <span class="navbar-user-name">Tài Lê</span>
+                            <ul class="navbar-user-menu">
+                                <li class="navbar-user-item ">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="navbar-user-item navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <a href="">
+                        <a href="/" class="header__logo-link">
                             <img class="header__logo-img" src="./essets/img/logo.png" alt="Logo Shop">
                         </a>
                     </div>
@@ -150,9 +168,79 @@
                             <i class="header__search-btn-icon fas fa-search"></i>
                         </button>
                     </div>
-
+                        <!-- Cart layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-cart-plus"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-cart-plus"></i>
+                            <!-- Has cart: header_cart-list--has-cart -->
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./essets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/e26bbe465df2e3e0a4dc7279cdf8087d_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bàn phím cơ có dây</h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: xịn</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/936e6f0403f0885d2ae44f5b885bff06" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Chuột gaming có dây</h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">369.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: có dây</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/9c6ee5be1dd017b8d316bf56798e1188" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tai nghe có dây</h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">300.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: có dây</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-item-view-item btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>
