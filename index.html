@@ -246,8 +246,67 @@
             </div>
         </header>
 
-        <div class="container">
-            
+        <div class="app__container">
+           <div class="grid">
+               <div class="grid__row app__conten">
+                   <div class="grid__col-2">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="category__heading-icon fas fa-list"></i>
+                            Danh mục
+                        </h3>
+                        
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">Bàn phím cơ</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Chuột gaming</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Tai nghe gaming</a>
+                            </li>
+                        </ul>
+                    </nav>
+                   </div>
+                   <div class="grid__col-10">
+                       <div class="home-filter">
+                           <span class="home-filter__label">Sắp xếp theo</span>
+                           <button class="home-filter__btn btn">Phổ biến</button>
+                           <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                           <button class="home-filter__btn btn">Bán chạy</button>
+
+                           <div class="select-input">
+                               <span class="select-input__label">Giá</span>
+                               <i class="select-input__icon fas fa-chevron-down"></i>
+                               <!-- list option -->
+                               <ul class="select-input__list">
+                                   <li class="select-input__item">
+                                       <a href="" class="select-input__link">Giá thấp đến cao</a>
+                                   </li>
+                                   <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá cao đến thấp</a>
+                                </li>
+                               </ul>
+                           </div>
+
+                           <div class="home-filter__page">
+                               <span class="home-filter__page-num">
+                                   <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filer__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
         </div>
         <footer class="footer">
 

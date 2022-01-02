@@ -21,9 +21,9 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
+/* rps */
 .grid {
-  width: 1224px;
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -35,6 +35,22 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+/* test */
+
+.grid__col-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+
+.grid__col-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.333%;
 }
 
 /*==  Animation ==*/
@@ -108,7 +124,7 @@ html {
   cursor: pointer;
   color: var(--text-color);
   background-color: var(--white-color);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1.6rem;
@@ -135,4 +151,58 @@ html {
   background-color: #c3c3c3;
 }
 
-/* Header with search */
+/* selection */
+
+.select-input {
+  position: relative;
+  min-width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-input__label {
+  font-size: 1.4rem;
+}
+
+.select-input__icon {
+  font-size: 1.4rem;
+  color: rgb(131, 131, 131);
+  position: relative;
+  top: 1px;
+}
+
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  padding: 8px 16px;
+  list-style: none;
+  display: none;
+}
+
+.select-input__item {
+}
+
+.select-input__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  padding: 4px 0;
+  display: block;
+}
+
+.select-input__link:hover {
+  color: var(--primary-color);
+}
+
+.select-input:hover .select-input__list {
+  display: block;
+}
