@@ -969,3 +969,66 @@
 .home-filter__page-btn--disabled .home-filter__page-icon {
   color: #ccc;
 }
+
+/* Product item */
+.home-product-item {
+  background-color: var(--white-color);
+  margin-top: 10px;
+}
+
+.home-product-item__img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home-product-item__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  height: 3.6rem;
+  overflow: hidden;
+  margin: 10px;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.home-product-item__price {
+}
+
+.home-product-item__price-old {
+}
+
+.home-product-item__price-current {
+}
+
+.home-product-item__action {
+}
+
+.home-product-item__like {
+}
+
+.home-product-item__rating {
+}
+
+.home-product-item__origin {
+}
+
+.home-product-item__origin-brand {
+}
+
+.home-product-item__origin-name {
+}
+
+.home-product-item__favourite {
+}
+
+.home-product-item__sale-off-percent {
+}
+
+.home-product-item__sale-off-label {
+}
