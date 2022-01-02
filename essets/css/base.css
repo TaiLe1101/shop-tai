@@ -9,6 +9,7 @@
   --header-with-search-height: calc(
     var(--header-height) - var(--navbar-height)
   );
+  --star-gold-color: #ffce3e;
 }
 
 * {
