@@ -11,6 +11,7 @@
   );
   --star-gold-color: #ffce3e;
   --primary-hover: rgba(238, 75, 43, 0.9);
+  --header-sort-bar-height: 46px;
 }
 
 * {
@@ -25,16 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 /* rps */
-.grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
 .grid__row {
   display: flex;
   flex-wrap: wrap;
@@ -249,11 +240,12 @@ html {
 }
 
 .pagination-item__link {
+  --height: 30px;
   text-decoration: none;
   font-size: 2rem;
   color: #939393;
   min-width: 40px;
-  height: 30px;
+  height: var(--height);
   line-height: 30px;
   display: block;
   text-align: center;
