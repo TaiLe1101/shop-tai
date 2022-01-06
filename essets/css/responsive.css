@@ -106,6 +106,17 @@
   .footer__content {
     padding: 0 16px;
   }
+  .footer__heading {
+    text-align: center;
+  }
+  .footer__download,
+  .footer-item__link {
+    justify-content: center;
+  }
+  .footer__download-app-link {
+    display: block;
+    padding: 6px 8px;
+  }
 }
 
 @keyframes mobileSearchFadeIn {
